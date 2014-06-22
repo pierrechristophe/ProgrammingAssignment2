@@ -1,6 +1,9 @@
 
 
-## this function create a special matrix which can cache its inverse
+## this function create a special matrix which can cache its inverse. The special matrix is a list of 4 
+## named component: get and set (accessors), setinverse (compute the inverse of the matrix via the 
+## solve function and cache it) and getinverse (return the cache value of the matrix's inverse if cached or NULL
+## otherwise)
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
